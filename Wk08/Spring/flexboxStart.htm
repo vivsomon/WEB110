@@ -1,0 +1,165 @@
+<!--Vivian Monsivaiz - 4/2/26-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Semantic Layout</title>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+/* Page Header */
+
+header{
+    background: rgb(36, 144, 97);
+    padding:20px;
+    text-align:center;
+}
+
+/* Navigation */
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style:none;
+    margin:0;
+    padding:10px;
+    background: rgb(170, 208, 192);
+}
+
+nav li{
+    margin-left:20px;
+}
+
+nav a{
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Main Content */
+
+main{
+    padding:20px;
+}
+
+/* Gallery Section */
+
+.gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.gallery figure {
+    flex: 1; /*aka 1 1 0% - grow and shrink as needed*/
+    margin: 0;
+}
+
+.gallery img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+
+}
+
+figcaption{
+    text-align:center;
+    padding:8px;
+    color:rgb(16, 84, 55);
+}
+
+/* Footer */
+
+footer{
+    background:rgb(170, 208, 192);
+    text-align:center;
+    padding:10px;
+}
+
+/* Responsive */
+
+@media (max-width:800px){
+
+.gallery{
+    flex-direction: column;
+}
+
+nav ul{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top:1em;
+}
+
+nav li{
+    margin:10px 0;
+    border-bottom: 1px solid #000;;
+}
+ header{
+    background-color: rgb(130, 91, 91);
+    border: 16px solid rgb(170, 208, 192);
+    font-size: 20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>CSS Template using Flexbox</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Gallery</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<p>This page demonstrates a semantic layout using Flexbox.</p>
+
+<section>
+
+<h2>Spring</h2>
+
+<div class="gallery">
+
+<figure>
+    <img src="images/overgrowth.jpg" alt="old computers in grass">
+    <figcaption><strong>Beauty</strong> lies in the overgrowth, of nature taking over obsolete technology.</figcaption>
+</figure>
+
+<figure>
+    <img src="images/train.jpg" alt="train with graffiti">
+    <figcaption>Exploring the unknown, rediscovering <strong>beauty</strong>, traveling, creating.</figcaption>
+</figure>
+
+<figure>
+    <img src="images/book.jpg" alt="open book in the grass">
+    <figcaption>The best place to enjoy literature is in nature; creativity in <strong>beauty</strong>.</figcaption>
+</figure>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<p>Contact me at <a href="mailto:vmonsiva@students.jccc.edu">vmonsiva@students.jccc.edu</a></p>
+</footer>
+
+</body>
+</html>
