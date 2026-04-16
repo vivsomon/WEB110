@@ -1,0 +1,97 @@
+/*Vivian Monsivaiz 4/16/26*/
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: lightseagreen;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: inset;
+    margin-bottom: 20px;
+
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    color: blueviolet;
+    font-size: 40px;
+}
+
+.form-group {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+/* INPUTS */
+input,select {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  margin-bottom:30px;
+
+}
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+button[type="submit"] {
+    background-color: blueviolet;
+    color: white;  
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: goldenrod;
+    border: 4px inset goldenrod;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    color: blueviolet;
+}
+
+/* Valid fields after user interaction */
+input:user-valid, select:user-valid {
+    background-color: lightgreen;
+    border-color: rgb(50, 164, 50);
+}
+input[type=text]:focus, input[type=date]:focus, select:focus {
+    background-color: #d2988d;
+    border-color: #e63946;
+}
