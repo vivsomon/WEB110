@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Allison Hanna-->
+ <html lang ="en">
+
+    <head>
+        <title>  CSS Practice     </title>
+        <meta charset="8-UTF">
+        <link rel="stylesheet" href="styless.css">
+        <style>
+            h1 {
+                color:blueviolet;
+                font-size: 28px;
+            }
+            h2 {
+                color:teal;
+                font-size: 24px;
+            }
+            .goldenrodtext {
+                color:goldenrod;
+                font-size: 24px;
+                font-style: italic;
+            }
+            h3, h4 {
+                color: blueviolet;
+                font-size: 18px;
+                font-style: italic;
+                background-color: rgb(0, 207, 207);
+            }
+            .highlightText {
+                color: teal;
+                font-size: 12px;
+                background-color: goldenrod;
+            }
+            .top {
+                color:blueviolet;
+                font-size: 12px;
+                text-align: center;
+                background-color: rgb(0, 207, 207);
+                font-weight: bold;
+            }
+            ol {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: blueviolet;
+            }
+            #footer {
+                border: 16px outset blueviolet;
+                background-color: blueviolet;
+            }
+            footer h6 {
+                color: white;
+                background-color: teal;
+                font-weight: bold;
+            }
+            a:link, a:visited {
+                text-decoration: none;
+                color: blueviolet;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            a:hover{
+                text-decoration: underline;
+                color: teal;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+          <a href="css_Start.html">THIS PAGE</a>
+        </nav>
+
+        <header>
+        <h1>CSS</h1>
+        </header>
+
+        <main>
+        <p class="top">Vivian's CSS Practice Page</p>
+        <h2>Browser defaults--Specificity from least to greatest</h2> 
+        <ol>
+            <li>Browser Defaults</li>
+            <li>Extrenal styles</li>
+            <li>Embedded styles</li>
+            <li> Imported styles</li>
+            <li> Inline styles</li>
+        </ol>
+
+        <h2 class="goldenrodtext">How to add CSS- 3 selectors</h2>
+         <ol> 
+            <li>Element styles</li>
+            <li> Classes</li>
+            <li> ID's</li>
+         </ol>
+
+        <h3>What is the difference between an element style, a class, and an ID? </h3>
+        <p class="highlightText">An element style can be created by using the HTML element (ex:h1, p, ol-- anything with <code><> brackets</code>)</p>
+        <p class="highlightText">A class style can be created by a hashtag and a name that can apply to multiple sections or to specify a section further.</p>
+        <p class="highlightText">This one has a class style on  it. An element style can be created by using the HTML element (ex:h1, p, ol-- anything with<code><> brackets</code>)</p>
+
+
+        <h4> Where can I put the CSS?</h4>
+
+        <ul>
+            <li> An external stylesheet</li>
+            <li> the <code> head</code> section of the web page.
+            <li> within the text of the page.</li>
+        </ul>
+
+        <p>What can I change with CSS? </p>
+        <blockquote>Anything on the page- text, images, headings, divs, ANYTHING. </blockquote>
+    </main>
+
+    <footer id="footer">
+        <p> This section has an ID style</p>
+        <h6>&copy; 2026 Vivian Monsivaiz WEB 110</h6>
+        <p> This is where the footer text will go.</p>
+    </footer>
+
+    </body>
+ </html>

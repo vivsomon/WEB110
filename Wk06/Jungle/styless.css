@@ -1,0 +1,82 @@
+ /*Vivian Monsivaiz box model webpage styles */
+
+/*general styles*/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    background-color: rgba(19, 235, 131, 1);
+    font-size: 1.2em; /*1 em = 16 px*/
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background: #13eb83;
+    background: radial-gradient(circle,rgba(19, 235, 131, 1) 0%, rgba(7, 178, 181, 1) 100%);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: .5rem solid rgba(7, 178, 181, 1);
+    padding-top: 10px;
+}
+
+/*navigation styles*/
+nav {
+    background-color: rgba(7, 178, 181, 1);
+    margin: 0em 2rem 2rem 2rem; /*margin for all 4 sides * moves like a clock * top >> right >> botton >> left*/
+    padding: 1.5rem;
+    border: 10px double rgba(19, 235, 131, 1);
+}
+nav ul {
+    list-style-type: none;
+    display: flex; justify-content: center; /*don't worry about these yet*/
+}
+nav a:link {
+    color: white;
+    text-decoration: none; /*no undelrine on the link */
+    font-size: 1em;
+}
+nav a:hover {
+    color: rgba(7, 178, 181, 1);
+    text-decoration: none;
+}
+nav a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+/*main styles */
+main {
+    max-width: 90%;
+    margin: 0 auto; /*centers the main box*/
+    padding: 10%;
+    border: 10px solid rgba(19, 235, 131, 1);
+    background-color: rgba(7, 178, 181, 1);
+}
+
+section {
+    background-color: rgba(19, 235, 131, 1);
+    margin-bottom: 1rem;
+    padding: 5%;
+    border: 10px double rgba(7, 178, 181, 1);
+}
+img {
+    border: 5px solid rgba(7, 178, 181, 1);
+    border-radius: 20%;
+    max-width: 95%;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    background: #13eb83;
+    background: radial-gradient(circle,rgba(19, 235, 131, 1) 0%, rgba(7, 178, 181, 1) 100%);
+    text-align: center;
+    padding: 2rem 2rem; /* Padding in rem */
+    margin-top: 2rem; /* Margin in rem */
+    border-top: 0.5rem solid rgba(7, 178, 181, 1); /* Border in rem */
+   
+}
+footer p{
+    color:white;
+}

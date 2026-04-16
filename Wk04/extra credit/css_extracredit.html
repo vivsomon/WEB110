@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Vivian Monsivaiz, 2/12/26 -->
+
+<head>
+  <title>CSS Practice Extra Credit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>/* Put your CSS styles below */
+    .top {
+      color: blueviolet;
+    }
+    .header {
+      background-color: rgb(160, 90, 226);
+      /*border: 8px groove blueviolet;*/
+      border: 8px groove rgb(160, 90, 226);
+      border-bottom: 4px dotted aliceblue;
+      font-size: 18px;
+      text-align: center;
+      color: #141414;
+    }
+    .subheader {
+      background-color: rgb(126, 200, 200);
+      /*border: 8px groove teal;*/
+      /*border: 8px solid teal;*/
+      border: 8px solid rgb(126, 200, 200);
+      border-bottom: 4px dotted aliceblue;
+      border-right: 8px groove rgb(126, 200, 200);
+      border-left: 8px groove rgb(126, 200, 200);
+      font-size: 12px;
+      text-align: center;
+      color: #212121;
+    }
+    .column.sideleft {
+      color: #141414;
+      font-size: 14px;
+      background-color:rgb(160, 90, 226);
+      border-left: 8px groove rgb(160, 90, 226);
+      border-bottom: 4px dotted aliceblue;
+    }
+    .column.middle {
+      color: #212121;
+      font-size: 14px;
+      background-color:rgb(126, 200, 200);
+      border-left: 4px dotted aliceblue;
+      border-right: 4px dotted aliceblue;
+      border-bottom: 4px dotted aliceblue;
+    }
+    .column.sideright {
+      color: #141414;
+      font-size: 14px;
+      background-color:rgb(160, 90, 226);
+      border-right: 8px groove rgb(160, 90, 226);
+      border-bottom: 4px dotted aliceblue;
+    }  
+    .stitle {
+      font-weight: bold;
+      text-decoration: underline;
+    }    
+    #footer {
+      text-align: center;
+      color: #212121;
+      font-size: 18px;
+      background-color: rgb(126, 200, 200);
+      border: 8px groove rgb(126, 200, 200)
+    }
+    a:link, a:visited {
+      text-decoration: none;
+      color: #212121;
+      font-weight: bold;
+    }
+    a:hover{
+      text-decoration: underline;
+      color: rgb(206, 160, 255);
+    }
+    
+    /*The CSS below needs to stay here. Don't touch it if you want your page to work.  See note below for the one item that can be removed. */
+    /* If you want to change the colors of the boxes those colors are on line 40,48,abd 54.  Feel free to change those. */
+ * 
+{
+  box-sizing: border-box;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column.side, .column.middle     {
+    width: 100%;
+     }
+ }
+    /* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+
+/* Left column */
+.column.sideleft {
+  width: 28%;
+  overflow: auto;
+}
+
+/* Middle column */
+.column.middle {
+  width: 44%;
+  overflow: auto;
+}
+/* right column */
+.column.sideright {
+  width: 28%;
+  overflow: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+  </style>
+</head>
+
+<body>
+
+<h2 class="top">CSS Template: About Me</h2>
+
+<p class="top"> This is a page about my favorite movies, foods, and more. </p>
+    
+<!-- The header section --> 
+<div class="header">
+  <h2>Vivian Monsivaiz</h2>
+</div>
+
+ <div class="subheader"> <!-- The subheader section --> 
+  <h3>This is my first CSS web page with CSS! </h3>
+</div>
+<div>
+    <!-- The first column --> 
+	<div class="column sideleft">
+	<p class="stitle"> My Favorite Foods </p>
+		<!-- Create a list here of 5 of your favorite foods-->
+      <ol>
+        <li>Buffalo Chicken</li>
+        <li>Cheeseburger</li>
+        <li>Barbeque Pork</li>
+        <li>Strawberries</li>
+        <li>Blueberry Pancakes</li>
+     </ol>
+     <p>Honorable Meals</p>
+     <ol>
+        <li>Raspberry & Cream Cheese Casserole</li>
+        <li>Steak & Asparagus & Sweet Potatoes</li>
+        <li>Super Loaded Nachos</li>
+     </ol>
+	</div>
+    
+     <!-- The second column --> 
+	<div class="column middle">
+	<p class="stitle">5 Facts About You </p>
+	<!-- Create a list here of 5 facts about you. You can include movies, hobbies, etc.-->
+      <ul>
+        <li>Christian</li>
+        <li>Core
+          <ul>
+            <li>Christian</li>
+            <li>INFJ, 9w1</li>
+            <li>Hufflepuff, Erudite, Sylph Canrius</li>
+          </ul>
+        </li>
+        <li>Special Interest
+          <ul>
+            <li>FNAF</li>
+          </ul>
+        </li>
+        <li>Hyperfixation
+          <ul>
+            <li>Six of Crows / Shadow & Bone</li>
+          </ul>
+        </li>
+        <li>Games Playing
+          <ul>
+            <li>FNAF World</li>
+            <li>Cookie Run: Kingdom</li>
+          </ul>
+        </li>
+    </ul>
+	</div>
+    
+     <!-- The third column --> 
+	<div class="column sideright">
+  	<p class="stitle">What Do You Want To Do After JCCC?</p>
+	<!-- Create a paragraph or list of things you want to do after you leave JCCC-->
+      <p>
+        My career goal is to become a Graphic Designer. I would like to work either at my church or at an Ad Agency.
+      </p>
+      <p>
+        I would also love to live in an industrial style apartment, not necessarily a studio apartment but that would be PEAK.
+      </p>
+	</div>
+</div>
+
+     <!-- The footer section --> 
+  <div id="footer">
+    <p><a href="mailto:vmonsiva@stumail.jccc.edu">Email Me</a> 2/12/26</p>
+</div>
+
+</body>
+</html>
