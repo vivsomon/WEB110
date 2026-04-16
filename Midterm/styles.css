@@ -1,0 +1,263 @@
+/*Vivian Monsivaiz 3/31/26*/
+
+/*Change everything--reset css */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*body styles*/
+Body {
+    line-height: 1.6;
+	text-align: center;
+}
+body.index {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body.wind95 {
+    background-color: darkcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+body.wind8 {
+    background: rgba(128, 202, 255, 1);
+    background: linear-gradient(0deg, rgba(128, 202, 255, 1) 0%, rgb(0, 106, 255) 50%, rgb(3, 56, 130) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/*header styles*/
+header {
+    padding: .5rem .5rem;
+    margin-bottom:.5rem;
+    text-align: center;
+    font-size: 1.5em;
+}
+body.index header {
+    color: blueviolet;
+    background-color: black;
+}
+body.wind95 header {
+    color: black;
+    background-color: darkcyan;
+}
+body.wind8 header {
+    color: white;
+    background-color: black;
+}
+
+
+/*nav styles*/
+nav {
+    margin: 0.25rem 0.25rem .25rem 2rem;
+    text-align: center;
+}
+nav li {
+    list-style-type: none;
+    margin: 0 25px 0 25px;
+    display: inline;
+}
+nav li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+body.index nav a {
+    color: blueviolet;
+}
+body.wind95 nav a {
+    color: black;
+}
+/*body.wind95 section.a, body.wind95 section.b, body.wind95 section.c, body.wind95 section.d {
+    display: relative;
+    float: left;
+    width: 48%;
+}
+body.wind95 section.d {
+    margin-left: 35px;
+    margin-top: 28px;
+}*/
+body.wind8 nav a {
+    color: white;
+}
+
+/*main styles*/
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem; 
+}
+body.index main {
+    color: black;
+}
+body.wind95 main {
+	background-color: darkcyan;
+}
+
+/*section styles*/
+section {
+    margin-bottom: 1rem; 
+    padding: 2rem; 
+    border: 20px double black; 
+    border-radius: 8px; 
+}
+body.index section {
+    background-color: blueviolet; 
+}
+body.wind95 section {
+    background-color: white; 
+    margin-bottom: 1rem; 
+    padding: 0 4rem 2rem 4rem;
+    border: 10px solid #c0c0c0; 
+    border-top: 40px solid #c0c0c0;
+    border-radius: 8px;
+}
+body.wind8 section {
+    border: .5px solid lightgrey;
+}
+body.wind8 section.a {
+    background-color: #1b882f;
+}
+body.wind8 section.b {
+    background-color: #72b9c4;
+}
+body.wind8 section.c {
+    background-color: #7340a4;
+}
+body.wind8 section.d {
+    background-color: #930600;
+}
+
+/*h2 styles*/
+body.index h2 {
+    text-align: center;
+    margin: -20px 0 20px -20px;
+    font-size: 1.25rem;
+}
+body.wind95 h2 {
+    text-align: left;
+    margin: -20px 0 20px -20px;
+    font-size: 1rem;
+    background-color: rgb(105, 105, 105);
+    color: lightgrey;
+    margin: -35px -65px 20px -65px;
+    border-radius: 4px;
+    text-indent: 25px;
+}
+body.wind8 h2 {
+    margin: 40px 0 -20px -20px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+/*list styles*/
+body.index ol {
+    margin-left: 1rem;
+	text-align: left;
+}
+body.index section.b ul {
+    margin-left: 2rem;
+	text-align: left;
+}
+body.wind95 section.b ul {
+    margin-left: 2rem;
+	text-align: left;
+}
+body.wind8 section.b ul {
+    font-size: 1.25rem;
+    margin-left: 2rem;
+	text-align: left;
+}
+
+
+/*p styles*/
+p {
+    text-align: left;
+    margin-bottom: .5rem;
+	text-align: left;
+	font-weight: normal;
+}
+body.index p {
+    margin-top: 20px;
+}
+p.released {
+	text-align: center;
+}
+p.key {
+    margin-top: 20px;
+}
+body.wind8 p {
+    font-size: 1.25rem; 
+}
+
+/*image styles*/
+body.index section.b img {
+	position: relative;
+	float: right;
+	width: 50%;
+	margin: 5px;
+}
+img.windows {
+    margin-right: 20px;
+    margin-top: -20px;
+    border: 6px solid #c0c0c0;
+    width: 150px;
+    text-align: center;
+	width: 20%;
+	margin: 5px;
+}
+img#w95c {
+    margin-right: 20px;
+    margin-top: -20px;
+    border: 6px solid #c0c0c0;
+    width: 150px;
+    float: right;
+    text-align: center;
+}
+img#w95b {
+    margin-right: 20px;
+    clear: both;
+    width: 100%;
+    border: 10px solid #c0c0c0;
+    border-radius: 8px;
+}
+img#w8b {
+    width: 100%;
+    border: .5px solid lightgrey;
+}
+img#w8c {
+    margin-right: 20px;
+    width: 25%;
+    float: right;
+}
+
+/*footer styles*/
+footer {
+    padding: 1rem 0; 
+    margin-top: .5rem;
+}
+footer p {
+    text-align: center;
+}
+body.index footer {
+    background-color: black;
+}
+body.index footer p {
+	color: blueviolet;
+}
+body.wind95 footer {
+    background-color: #c0c0c0;
+}
+body.wind95 footer p {
+	color: black;
+}
+body.wind8 footer {
+    background-color: black;
+}
+body.wind8 footer p {
+	color: white;
+}
