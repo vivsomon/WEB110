@@ -1,0 +1,62 @@
+body {
+  background-image: url("images/wavy.gif");
+  background-repeat: repeat;
+  font-family: "Texturina", serif;
+  /*font-family: "Betania Patmos In Guideline", sans-serif;*/
+}
+header {
+	background: #9a09e3;
+  background: linear-gradient(0deg,rgba(154, 9, 227, 1) 0%, rgba(31, 207, 198, 1) 100%); 
+}
+/* Style the content */
+.content {
+  padding: 10px;
+  font-size:20px;
+  color:#3d1010;  
+}
+    
+/* Style the list */   
+    
+ol{
+  list-style-image: url('images/star.png');
+  padding-left:50px;
+  list-style-position: inside;
+}
+    
+li{
+  text-indent:20px;
+}
+    
+   /* Style the blockquote */
+blockquote {
+  padding:10px;
+  border:2px darkteal;
+  background: #9a09e3;
+  background: linear-gradient(0deg,rgba(154, 9, 227, 1) 0%, rgba(31, 207, 198, 1) 100%);
+}    
+    
+  /* Style the h5 and h6 */
+
+    
+/* Style the footer */
+#footer {
+  font-family: "Limelight", sans-serif;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-style:italic;
+  font-weight: bold;
+  text-align: center;
+  background: #9a09e3;
+  background: linear-gradient(0deg,rgba(154, 9, 227, 1) 0%, rgba(31, 207, 198, 1) 100%);
+}
+
+img {
+  padding:20px;
+  margin:20px;
+}
+    
+.contactinfo {
+  color:brown;
+  font-size:20px;
+  border: 2px solid navy;
+}

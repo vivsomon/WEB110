@@ -1,0 +1,65 @@
+<!-- Vivian Monsivaiz Forms-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styleContactStart.css">
+</head>
+
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+     
+ <!-- The first and second most important lines in this page :) -->
+<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your last name..." required>
+
+ <!-- Enter a field for the Last Name (see above for an example)-->
+
+  <label for="country">Country</label>
+  <select id="country" name="country" required>
+    <option value="">--Select--</option>
+    <option value="usa">USA</option>
+    <option value="canada">Canada</option>
+    <option value="Japan">Mexico</option>
+    <option value="Japan">Japan</option>
+    <!--This is a link to a HUGE list of countries to add if you want -- https://gist.github.com/danrovito/977bcb97c9c2dfd3398a -->
+  </select>
+
+  <label for="birthday">Birthday</label>
+  <input type="date" id="birthday" name="birthday" required>
+  <!--Add a birthday element -->
+
+  <!-- RADIO GROUP -->
+  <fieldset class="radio-group">
+    <legend>Preferred Contact Method</legend>
+
+    <label>
+      <input type="radio" name="contact" value="email" required>
+      Email
+    </label>
+
+    <label>
+      <input type="radio" name="contact" value="phone">
+      A phone call
+    </label>
+
+    <label>
+      <input type="radio" name="contact" value="text">
+      A text
+    </label>
+
+  </fieldset>
+
+  <input type="submit" value="Submit">
+
+</form>
+
+</div>
+
+</body>
+</html>

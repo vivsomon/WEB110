@@ -1,0 +1,94 @@
+/* Vivian Monsivaiz 04/16/26 */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightseagreen;
+  margin: 0;
+  padding: 20px;
+}
+
+/* CENTER FORM */
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h3{
+    text-align: center;
+    font-size: 2em;
+}
+
+/* =========================
+   MOBILE FIRST GRID
+   ========================= */
+form {
+  display: grid;
+  grid-template-columns: 1fr; /*fill 100%*/
+  gap: 10px;
+}
+
+/* INPUTS */
+input, select {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+/* =========================
+   VALID / INVALID STYLES
+   ========================= */
+
+/* VALID INPUTS */
+input:user-valid, select:user-valid {
+  background-color: lightgreen;
+  border-color: rgb(50, 164, 50);
+}
+
+/* INVALID INPUTS */
+input:user-invalid, select:user-invalid {
+  background-color: #d2988d; /* light red */
+  border-color: #e63946;
+  font-weight: bold;
+  text-decoration: wavy;
+}
+
+/* RADIO GROUP */
+.radio-group {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.radio-group label {
+  display: block;
+  margin: 5px 0;
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"] {
+  background-color: #aa4c04;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ====================================
+   DESKTOP UPGRADE for bigger screens
+   ==================================== */
+@media (min-width: 700px) {
+  form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  input[type="submit"] {
+    grid-column: span 2;
+  }
+
+  .radio-group {
+    grid-column: span 2;
+  }
+}
