@@ -1,0 +1,136 @@
+<!-- Vivian Monsivaiz 04/23/2026  Digital Mobile/Desktop Card-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Flip Card</title>
+<script src="jsForPhone.js" defer></script> <!-- needed because we have links on our card. No links, no js needed-->
+  <style>
+    /* If this is for a portfolio, MOVE these styles to an external css file */
+    * { 
+      margin:0; 
+      padding:0; 
+      box-sizing:border-box;
+  }
+
+    body {
+      min-height: 100vh;     /*  This will fill the browser's height.  Remove the justify-content and align-items css to see the full height. */
+      display: flex;    /* This will organize the information well with flex */
+      justify-content: center;  /* This will center the info L and R */
+      align-items: center;      /* This will center the info Top and Bottom */
+      background: black;  /*safety net while the image loads*/
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      perspective: 1200px;         /* https://www.w3schools.com/cssref/css3_pr_perspective.php   The lower the #, the more 3d effect.  It changes the child of body, not body itself. */
+    }
+
+    /* This is the container of the card */
+    article.flip-card {
+      width: 90vw;             /* This controls the height*/
+      max-width: 800px;    /* This controls the width*/
+      aspect-ratio: 2 / 1;    /* This controls the height and width on a phone - landscape or portrait*/
+      border-radius: 44px;  
+      position: relative;       /* This controls the positon of the container in some browsers*/
+      transform-style: preserve-3d;     /* https://www.w3schools.com/cssref/trycss3_transform-style_inuse.htm  This just preserves the 3D effect */
+      transition: transform 1.5s ease-in-out;  /* https://www.w3schools.com/css/css3_transitions.asp   This determines how long and what kind of transition */
+      pointer-events: auto;  /* allow clicks and hovers on desktops and phones */
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent; /* remove link borders--dotted edges on an iOS device */
+    }
+
+    /* When the card is flpped, flip back to the front*/
+    article.flip-card.flipped {
+      transform: rotateY(180deg) !important;   
+    }
+
+    .card-side {
+      display: flex; /* responsive sizing*/
+      justify-content: center;  /* center the content  L and R*/
+      align-items: center;   /* center the content top and bottom */
+      position: absolute;  /* needed for flip card sides to stack on top of each other */
+      inset: 0;  /* stick to the edges and fill the box works with backface visiblity */
+      padding: 20px 30px;
+      color: white;     /* Add a font color */
+      border-radius: 20px;     /* Add a border radius */
+      backface-visibility: hidden;   /* Hide the back of the card (ex:hidden)  Demo:https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility */
+      transform-style: preserve-3d;  /* https://www.w3schools.com/cssref/trycss3_transform-style_inuse.htm  This just preserves the 3D effect */
+      }
+
+    .front {
+      background-size: 100vh; /* Shows more of the image so you fill the space*/
+      background-image: url(images/purple_teal_3.jpg); /* Add your front image here */
+      background-position: center;  /*Centers the picture in the box */
+      background-size: cover;   /*Fill the box with the picture */
+  }
+    .back {
+      background-color: white;
+      transform: rotateY(180deg); /* This keeps the image on the back of the card.  Remove it to see the difference.*/
+      padding-top: 10px;
+      background-image: url(images/purple_teal_3.jpg); /* Add your back picture here */
+      background-position: center;  /*Centers the picture in the box */
+      background-size: cover;   /*Fill the box with the picture */
+      }
+
+    .content {
+      transform: translateZ(70px) scale(0.85); /*https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateZ   Moves things closer or farther away from you.   The scale forces the content to fill up less space on the card. Just remove scale to see the text fill the whole card.  */
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    .content h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      border-bottom: 4px solid white;  /* Add a border */
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+
+    .content p{
+    font-size: 1.2em;
+    }
+
+    /* The email me button */
+    .back a {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 34px;
+      border: 4px solid white;  /* Add a border */
+      border-radius: 50px; /* Add a border radius */
+      color: white; /* Add a font color */
+      background-color: transparent; /* Add a background color for your button -- use transparent if you want the button see through;*/
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: all 0.35s ease;
+    }
+
+    .back a:hover { 
+    background-color: white;
+    color: darkcyan;
+      /* Add a background color and text color*/
+    }
+
+  </style>
+</head>
+<body>
+  <article class="flip-card" id="card"><!--This is the container that holds the business card -->
+
+    <section class="card-side front"><!--This is the container that holds the front of the business card -->
+      <div class="content"><!--This is the container that holds the info on the front of the business card -->
+        <h2>Vivian Monsivaiz</h2><!--This is the header on the front of the business card -->
+        <p>Verdana Visuals | Graphic Design</p>
+        <p>Vivid | Bold | Quirky</p>
+      </div><!--closing content div-->
+    </section>
+
+      <section class="card-side back"><!--This is the container that holds the back of the business card -->
+      <div class="content"><!--This is the container that holds the info on the back of the business card -->
+        <h2>Contact Me</h2><!--This is the header on the back of the business card.-->
+        <p>Feel free to reach out anytime!</p>
+        <a href="verdanavisuals@gmail.com">Email Me</a>
+      </div>
+    </section>
+  </article>
+</body>
+</html>
