@@ -1,0 +1,90 @@
+<!--Vivian Monsivaiz, 5/8/26-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Through the Ages</title>
+    <link href="final.css" rel="stylesheet">
+</head>
+<body class="index"> <!--THIS IS THE WRAPPER BUT EACH PAGE NEEDS A DIF NAME-->
+    <header>
+        <h1>Windows Eras</h1>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wind95.html">Windows 95</a></li>
+                <li><a href="windxp.html">Windows XP</a></li>
+                <li><a href="wind7.html">Windows 7</a></li>
+                <li><a href="wind8.html">Windows 8</a></li>
+                <li><a href="wind10.html">Windows 10</a></li>
+            </ul>
+        </nav>
+    <main>
+        <section class="a">
+            <h2>Windows Design Through Time</h2>
+                <p>Microsoft Windows has played a major role in shaping how people interact with computers. Since its introduction in the 1980s, Windows has gone through many visual and functional changes as technology, user needs, and design trends evolved.</p>
+        </section>
+        <section class="b">
+            <h2>What This Site Covers</h2>
+                <ol>
+                    <li>Important Windows design eras</li>
+                    <li>Visual and usability changes over time</li>
+                    <li>How design decisions affected user experience</li>
+                    <li>The transition from desktop-focused to touch-focused design</li>
+                </ol>
+				<a href="images/code.jpg" download><img src="images/code.jpg" alt="A purple hue screenshot of misc code"></a>
+        </section>
+        <section class="c">
+           <h2>Featured Eras</h2>
+            <p>Each new Windows era introduced new ideas that shaped the future of operating systems and digital design. This website will focus on key, iconic eras.</p>
+            <a href="images/01_w95.jpg" download><img src="images/01_w95.jpg" class="ads" id="w95" alt="Windows 95 ad"></a>
+            <a href="images/02_wxp.jpg" download><img src="images/02_wxp.jpg" class="ads" id="wxp" alt="Windows XP guide"></a>
+            <a href="images/03_w7.jpg" download><img src="images/03_w7.jpg" class="ads" id="w7" alt="Windows 7 guide"></a>
+            <a href="images/04_w8.jpg" download><img src="images/04_w8.jpg" class="ads" id="w8" alt="Windows 8 guide"></a>
+            <a href="images/05_w10.jpg" download><img src="images/05_w10.jpg" class="ads" id="w10" alt="Windows 10 guide"></a>
+        </section>
+        <section class="d">
+            <h2>Booklet</h2>
+            <p>Fill out the form below to request a physical copy of the Windows design eras booklet. This printed booklet includes curated information on major Windows versions and their design impact. Mailing information is collected solely for delivery purposes and will not be used beyond fulfilling the booklet request.</p>
+            <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
+                <label for="fname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Your last name..." required>
+                <label for="type">Booklet Type</label>
+                    <select id="type" name="type">
+                        <option value="">--Select--</option>
+                        <option value="stand">Standard Size</option>
+                        <option value="larg">Large Print</option>
+                        <option value="both">Both</option>
+                    </select>
+                <fieldset>
+                    <p>Delivery Format</p>
+                        <label>
+                            <input type="radio" name="delivery" value="digi" required>
+                            Digital PDF
+                        </label>
+                        <label>
+                            <input type="radio" name="delivery" value="phys">
+                            Physical Mail
+                        </label>
+                </fieldset>
+                <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="example@mail.com">
+                <label for="email-check">
+                    <input type="checkbox" id="email-check" name="email-check">
+                    Receive email updates about future editions
+                </label>
+                <label for="comments">Additional Comments</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+            <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Vivian Monsivaiz, &copy;2026 | <a href="mailto:vmonsiva@stumail.jccc.edu">Email Me | <a href="https://www.behance.net/vmonsiva">My Behance</a></p>
+    </footer>
+</body>
+</html>

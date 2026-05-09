@@ -1,0 +1,509 @@
+/*Vivian Monsivaiz 5/8/26*/
+
+/*Change everything--reset css */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*body styles*/
+Body {
+    line-height: 1.6;
+	text-align: center;
+}
+body.index {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body.wind95 {
+    background-color: darkcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+body.windxp {
+    background-image: url("images/02_wXP_desktop_wp.jpg");
+    background-size: cover;
+    background-color: rgb(0, 78, 152);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body.wind7 {
+    background-image: url("images/03_w7_desktop_wp.webp");
+    background-size: cover;
+    background-color: rgb(0, 0, 0, 0.25);
+    font-family: Arial, Helvetica, sans-serif;  
+}
+body.wind8 {
+    background-image: url("images/04_w8_start_wp.png");
+    background-color: rgba(128, 202, 255, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+body.wind10 {
+    background-image: url("images/05_w10_desktop_wp.jpg");
+    background-size: cover;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header styles*/
+header {
+    padding: .5rem .5rem;
+    margin-bottom:.5rem;
+    text-align: center;
+    font-size: 1.5em;
+}
+body.index header {
+    color: blueviolet;
+    background-color: black;
+}
+body.wind95 header {color: white; background-color: darkcyan;}
+body.windxp header, body.wind7 header, body.wind8 header, body.wind10 header {color: white;}
+
+/*nav styles*/
+nav {
+    margin: 0.25rem 0.25rem .25rem 2rem;
+    text-align: center;
+}
+nav li {
+    list-style-type: none;
+    margin: 0 25px 0 25px;
+    display: inline;
+}
+nav li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+body.index nav a {color: blueviolet;}
+body.wind95 nav a, body.windxp nav a, body.wind7 nav a, body.wind8 nav a, body.wind10 nav a {color: white;}
+
+/*main styles*/
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem; 
+}
+
+/*section styles*/
+section { 
+    padding: 2rem; 
+}
+body.index section {
+    background-color: blueviolet; 
+    border: 20px double black;   
+    border-radius: 8px;
+    /*min-width: 40%;
+    max-width: 45%;*/
+}
+body.wind95 section {
+    background-color: white; 
+    margin-bottom: 1rem; 
+    padding: 0 4rem 2rem 4rem;
+    border: 10px solid #c0c0c0; 
+    border-top: 40px solid #c0c0c0;
+}
+body.wind95 section.a {min-width: 45%; max-width: 55%; height: 30%;}
+body.wind95 section.b {min-width: 30%; max-width: 40%;}
+body.wind95 section.c {min-width: 40%; max-width: 50%;}
+body.wind95 section.d {min-width: 30%; max-width: 40%; height: 30%;}
+
+body.windxp section {
+    background-color: white;
+    margin: 1rem;
+    padding: 0 1rem 2rem 1rem;
+    border: 5px solid rgb(2, 84, 230);
+    border-top: 20px solid rgb(2, 84, 230);
+    border-radius: 8px;
+    min-width: 40%;
+    max-width: 45%;
+}
+body.wind7 section {
+    background-color: white;
+    background-clip: padding-box;
+    margin: 1rem;
+    padding: 0 1rem 2rem 1rem;
+    border: 5px solid rgb(0, 0, 0, 0.25);
+    border-top: 30px solid rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    min-width: 40%;
+    max-width: 45%;
+}
+body.wind8 section {border: .5px solid lightgrey; border-radius: 8px;}
+body.wind8 section.a {background-color: #1b882f;}
+body.wind8 section.b {background-color: #72b9c4;}
+body.wind8 section.c {background-color: #7340a4;}
+body.wind8 section.d {background-color: #930600;
+}
+body.wind10 section {
+    background-color: white;
+    background-clip: padding-box;
+    margin-bottom: 1rem;
+    padding: 0 1rem 2rem 1rem;
+    border-top: 20px solid white;
+    border-bottom: 30px solid #f0f0f0;
+    border-radius: 8px;
+    min-width: 40%;
+    max-width: 45%;
+}
+
+/*flex styles*/
+body.wind95 main, body.windxp main, body.wind7 main, body.wind10 main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;/*justify-content: space-around;*/
+}
+
+body.wind95 main {
+    justify-content: center; 
+    row-gap: 5px;
+    column-gap: 20px;
+}
+body.wind95 main section.a {align-self: flex-end; }
+body.wind95 main section.d {align-self: flex-start;}
+
+body.windxp main {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+body.wind7 main {justify-content: space-between;}
+
+body.wind10 main {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/*grid styles*/
+body.index main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 8fr, 8fr, 1fr));
+    gap: 1%;
+    grid-auto-rows: minmax(auto, max-content); 
+}
+body.index section.a {grid-column: 2/3; grid-row: 1/2;}
+body.index section.b {grid-column: 3/4; grid-row: 1/2;}
+body.index section.c {grid-column: 1/5; grid-row: 2/4;}
+body.index section.d {grid-column: 1/5; grid-row: 4/5;}
+
+body.wind8 main {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(20fr, 1fr, 20fr));
+    gap: 1%;
+    grid-auto-rows: minmax(auto, max-content);
+}
+body.wind8 section.a {grid-column: 1; grid-row: 1;}
+body.wind8 section.b {grid-column: 3; grid-row: 1;}
+body.wind8 section.c {grid-column: 1; grid-row: 3;}
+body.wind8 section.d {grid-column: 3; grid-row: 3;}
+body.wind8 img {grid-column: 1/5; grid-row: 5;}
+
+/*h2 styles*/
+body.index h2 {
+    text-align: center;
+    margin: -20px 0 20px -20px;
+    font-size: 1.25rem;
+}
+body.wind95 h2 {
+    text-align: left;
+    font-size: 1rem;
+    background-color: rgb(105, 105, 105);
+    color: lightgrey;
+    margin: -35px -65px 20px -65px;
+    text-indent: 25px;
+}
+body.windxp h2 {
+    text-align: left;
+    font-size: 1rem;
+    background-color: rgb(2, 84, 230);
+    color: rgb(242, 227, 220);
+    margin: -18px -18px 18px -18px;
+    border-radius: 4px;
+    text-indent: 25px;
+}
+body.wind7 h2 {
+    text-align: left;
+    font-size: 1rem;
+    margin: -25px -18px 18px -18px;
+    border-radius: 4px;
+    text-indent: 25px;
+    text-shadow: 
+        0 0 05px white, 
+        0 0 10px white, 
+        0 0 20px white, 
+        0 0 40px white, 
+        0 0 80px white;
+}
+body.wind8 h2 {
+    margin: 40px 0 -20px -20px;
+    text-align: left;
+    font-size: 1rem;
+}
+body.wind10 h2 {
+    text-align: left;
+    font-size: 1rem;
+    margin: -10px -10px 10px -10px;
+    border-bottom: 1px solid #f0f0f0;
+    text-indent: 25px;
+}
+
+/*p styles*/
+p {
+    text-align: left;
+    margin-bottom: .5rem;
+	text-align: left;
+	font-weight: normal;
+}
+body.index p {margin-top: 20px; font-size: 1.25rem;}
+p.released {text-align: center;}
+p.key {margin-top: 20px;}
+body.wind8 p {font-size: 1.25rem;}
+
+/*list styles*/
+body.index ol {
+    margin-left: 1rem;
+	text-align: left;
+    font-size: 1rem;
+}
+body section.b ul {
+    margin-left: 2rem;
+	text-align: left;
+}
+body.wind95 section.b ul {
+    margin-left: 0rem;
+}
+body.wind8 section.b ul {
+    font-size: 1rem;
+    margin-left: 2rem;
+	text-align: left;
+}
+
+/*form styles*/
+/*form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: grid;
+  display: block;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+label[for=fname], input#fname {grid-column: 1/3; grid-row: 1/2;}
+label[for=lname], input#lname {grid-column: 1/3; grid-row: 2/3;}
+label[for=type], input#type {grid-column: 1/3; grid-row: 3/4;}
+fieldset {grid-column: 1/2; grid-row: 4/5;}
+label input[for=email], input#email {grid-column: 2/3; grid-row: 4/5;}
+label[for=comments], textarea#comments {grid-column: 1/3; grid-row: 5/6;}*/
+form {
+    color: #a8a8a8
+}
+label {
+    display: block;
+    text-align: left;
+    margin-top: 1rem;
+    color: #a8a8a8
+}
+input[type=text], fieldset, select, input[type=email] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 6px solid black;
+    background-color: black;
+    box-sizing: border-box;
+    color: #a8a8a8
+}
+textarea {
+    width: 100%;
+    background-color: black;
+    color: #a8a8a8
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #a8a8a8
+}
+input[type=submit]:hover {
+  background-color: #45a049a4;
+  color: #a8a8a8
+}
+
+/*image styles*/
+body.index section.b img {
+	position: relative;
+	float: none;
+	width: 100%;
+	margin: 5px;
+}
+img.ads {
+    margin-right: 20px;
+    margin-top: -20px;
+    border: 6px solid #c0c0c0;
+    text-align: center;
+	width: 15%;
+	margin: 5px;
+}
+#w95l {
+    margin-right: -50px;
+    margin-top: -15px;
+    border: 6px solid #c0c0c0;
+    border-top: 12px solid #c0c0c0;
+    width: 45%;
+    float: right;
+    text-align: center;
+}
+#w95d {
+    margin-right: 20px;
+    clear: both;
+    width: 100%;
+    border: 10px solid #c0c0c0;
+}
+#wXPl {
+    margin-right: 20px;
+    margin-top: -20px;
+    border: 6px solid rgb(2, 84, 230);
+    border-top: 12px solid rgb(2, 84, 230);
+    width: 45%;
+    float: right;
+    text-align: center;
+    padding: 10px;
+}
+#wXPd {
+    width: 100%;
+    border: .5px solid rgb(2, 84, 230);   
+}
+#w7l {
+    margin-right: 20px;
+    margin-top: -25px;
+    border: 6px solid rgba(0, 0, 0, 0.25);
+    border-top: 12px solid rgba(0, 0, 0, 0.25);
+    width: 45%;
+    float: right;
+    text-align: center;
+    padding: 10px;
+}
+#w7d {
+    width: 100%;
+    border: .5px solid rgba(0, 0, 0, 0.25);   
+}
+#w8l {
+    margin-right: 20px;
+    margin-top: -15px;
+    border: 6px solid lightgrey;
+    border-top: 12px solid lightgrey;
+    width: 45%;
+    float: right;
+    text-align: center;
+    padding: 10px;
+    background: white;
+}
+#w8d {
+    width: 100%;
+    border: .5px solid lightgrey;
+}
+#w10l {
+    margin-right: 20px;
+    margin-top: -25px;
+    border: 6px solid #f0f0f0;
+    border-top: 12px solid #f0f0f0;
+    width: 45%;
+    float: right;
+    text-align: center;
+    padding: 10px;
+}
+#w10d {
+    width: 100%;
+    border: .5px solid #f0f0f0;   
+}
+
+
+/*footer styles*/
+footer {padding: 1rem 0; margin-top: 2rem;}
+footer p {text-align: center;}
+footer a {text-decoration: none;}
+
+body.index footer {background-color: black;}
+body.index footer p, body.index footer a {color: blueviolet;}
+
+body.wind95 footer {background-color: #c0c0c0;}
+body.wind95 footer p, body.wind95 footer a {color: black;}
+
+body.windxp footer {background-color: rgb(0, 78, 152);}
+body.windxp footer p, body.windxp footer a {color: white;}
+
+body.wind7 footer {background-color: rgb(0, 0, 0, 0.25)}
+body.wind7 footer p, body.wind7 footer a {color: black;}
+
+body.wind8 footer {background-color: black;}
+body.wind8 footer p, body.wind8 footer a {color: white;}
+
+body.wind10 footer {background-color: black;}
+body.wind10 footer p, body.wind10 footer a {color: white;}
+
+
+/*responsive*//*responsive*/
+@media (max-width: 1250px) {
+body.wind8 main {
+    grid-template-columns: 1fr; 
+    grid-auto-rows: minmax(auto, max-content);}
+body.wind8 section.a {grid-column: 1/2; grid-row: 1/2;}
+body.wind8 section.b {grid-column: 1/2; grid-row: 2/3;}
+body.wind8 section.c {grid-column: 1/2; grid-row: 3/4;}
+body.wind8 section.d {grid-column: 1/2; grid-row: 4/5;}
+body.wind8 img {grid-column: 1/2; grid-row: 5/6;}
+body.wind8 footer {margin: 5rem 0 0 0;}
+
+}
+
+@media (max-width: 1000px) {
+body.index main {
+    grid-template-columns: 100%; 
+    grid-auto-rows: minmax(auto, max-content);}
+body.index section.a {grid-column: 1/2; grid-row: 1/2;}
+body.index section.b {grid-column: 1/2; grid-row: 2/3;}
+body.index section.c {grid-column: 1/2; grid-row: 3/4;}
+body.index section.d {grid-column: 1/2; grid-row: 4/5;}
+
+body.wind95 main, body.windxp main, body.wind7 main, body.wind10 main {
+    flex-direction: column;}
+body.wind95 main section.a {align-self: center; min-width: 100%; max-width: 100%;}
+body.wind95 main section.b {align-self: center; min-width: 100%; max-width: 100%;}
+body.wind95 main section.c {align-self: center; min-width: 100%; max-width: 100%;}
+body.wind95 main section.d {align-self: center; min-width: 100%; max-width: 100%;}
+#w95l {width: 50%;}
+
+body.windxp main {justify-content: center; align-items: center;}
+body.windxp main section.a {align-self: center; min-width: 100%; max-width: 100%;}
+body.windxp main section.b {align-self: center; min-width: 100%; max-width: 100%;}
+body.windxp main section.c {align-self: center; min-width: 100%; max-width: 100%;}
+body.windxp main section.d {align-self: center; min-width: 100%; max-width: 100%;}
+#wxpl {width: 50%;}
+
+body.wind7 main {justify-content: center; align-content: center;}
+body.wind7 main section.a {align-self: center; min-width: 100%; max-width: 100%;}
+body.wind7 main section.b {align-self: center; min-width: 100%; max-width: 100%;}
+body.wind7 main section.c {align-self: center; min-width: 100%; max-width: 100%;}
+body.wind7 main section.d {align-self: center; min-width: 100%; max-width: 100%;}
+#w7l {width: 50%;}
+
+body.wind10 main {justify-content: center; align-content: center;}
+body.wind10 main section.a {align-self: center; min-width: 100%; max-width: 100%;}
+body.wind10 main section.b {align-self: center; min-width: 100%; max-width: 100%;}
+body.wind10 main section.c {align-self: center; min-width: 100%; max-width: 100%;}
+body.wind10 main section.d {align-self: center; min-width: 100%; max-width: 100%;}
+#w10l {width: 50%;}
+
+footer {margin: 5rem 0 0 0;}
+}
+
+/*I'M SO SORRY THERE'S SO MANY FOR SOME REASON I COULDN'T FIGURE OUT WHY CONDENSING & SIMPLIFYING THEM WASN'T KEEPING THE STYLE!!*/
