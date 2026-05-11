@@ -185,10 +185,10 @@ body.index main {
     gap: 1%;
     grid-auto-rows: minmax(auto, max-content); 
 }
-body.index section.a {grid-column: 2/3; grid-row: 1/2;}
-body.index section.b {grid-column: 3/4; grid-row: 1/2;}
+body.index section.a {grid-column: 1/3; grid-row: 1/2;}
+body.index section.b {grid-column: 3/5; grid-row: 1/2;}
 body.index section.c {grid-column: 1/5; grid-row: 2/4;}
-body.index section.d {grid-column: 1/5; grid-row: 4/5;}
+body.index section.d {grid-column: 2/4; grid-row: 4/5;}
 
 body.wind8 main {
     display: grid; 
@@ -200,7 +200,7 @@ body.wind8 section.a {grid-column: 1; grid-row: 1;}
 body.wind8 section.b {grid-column: 3; grid-row: 1;}
 body.wind8 section.c {grid-column: 1; grid-row: 3;}
 body.wind8 section.d {grid-column: 3; grid-row: 3;}
-body.wind8 img {grid-column: 1/5; grid-row: 5;}
+body.wind8 img {grid-column: 3/4; grid-row: 5;}
 
 /*h2 styles*/
 body.index h2 {
@@ -258,7 +258,7 @@ p {
 	text-align: left;
 	font-weight: normal;
 }
-body.index p {margin-top: 20px; font-size: 1.25rem;}
+body.index p {margin-top: 20px; font-size: 1rem;}
 p.released {text-align: center;}
 p.key {margin-top: 20px;}
 body.wind8 p {font-size: 1.25rem;}
@@ -299,9 +299,6 @@ label[for=type], input#type {grid-column: 1/3; grid-row: 3/4;}
 fieldset {grid-column: 1/2; grid-row: 4/5;}
 label input[for=email], input#email {grid-column: 2/3; grid-row: 4/5;}
 label[for=comments], textarea#comments {grid-column: 1/3; grid-row: 5/6;}*/
-form {
-    color: #a8a8a8
-}
 label {
     display: block;
     text-align: left;
@@ -353,6 +350,11 @@ img.ads {
 	width: 15%;
 	margin: 5px;
 }
+img.booklet {
+    border: 6px solid #c0c0c0;
+	width: 30%;
+	margin: 5px;
+}
 #w95l {
     margin-right: -50px;
     margin-top: -15px;
@@ -365,7 +367,7 @@ img.ads {
 #w95d {
     margin-right: 20px;
     clear: both;
-    width: 100%;
+    width: 50%;
     border: 10px solid #c0c0c0;
 }
 #wXPl {
@@ -379,7 +381,9 @@ img.ads {
     padding: 10px;
 }
 #wXPd {
-    width: 100%;
+    clear: both;
+    width: 50%;
+    margin-right: 250px;
     border: .5px solid rgb(2, 84, 230);   
 }
 #w7l {
@@ -393,8 +397,10 @@ img.ads {
     padding: 10px;
 }
 #w7d {
-    width: 100%;
+    clear: both;
+    width: 50%;
     border: .5px solid rgba(0, 0, 0, 0.25);   
+    margin-left: 300px;
 }
 #w8l {
     margin-right: 20px;
@@ -408,6 +414,7 @@ img.ads {
     background: white;
 }
 #w8d {
+    clear: both;
     width: 100%;
     border: .5px solid lightgrey;
 }
@@ -422,7 +429,8 @@ img.ads {
     padding: 10px;
 }
 #w10d {
-    width: 100%;
+    clear: both;
+    width: 50%;
     border: .5px solid #f0f0f0;   
 }
 
@@ -460,7 +468,7 @@ body.wind8 section.a {grid-column: 1/2; grid-row: 1/2;}
 body.wind8 section.b {grid-column: 1/2; grid-row: 2/3;}
 body.wind8 section.c {grid-column: 1/2; grid-row: 3/4;}
 body.wind8 section.d {grid-column: 1/2; grid-row: 4/5;}
-body.wind8 img {grid-column: 1/2; grid-row: 5/6;}
+#w8d {grid-column: 1/2; grid-row: 5/6; width: 100%}
 body.wind8 footer {margin: 5rem 0 0 0;}
 
 }
@@ -481,6 +489,7 @@ body.wind95 main section.b {align-self: center; min-width: 100%; max-width: 100%
 body.wind95 main section.c {align-self: center; min-width: 100%; max-width: 100%;}
 body.wind95 main section.d {align-self: center; min-width: 100%; max-width: 100%;}
 #w95l {width: 50%;}
+#w95d {width: 100%;}
 
 body.windxp main {justify-content: center; align-items: center;}
 body.windxp main section.a {align-self: center; min-width: 100%; max-width: 100%;}
@@ -488,6 +497,7 @@ body.windxp main section.b {align-self: center; min-width: 100%; max-width: 100%
 body.windxp main section.c {align-self: center; min-width: 100%; max-width: 100%;}
 body.windxp main section.d {align-self: center; min-width: 100%; max-width: 100%;}
 #wxpl {width: 50%;}
+#wxpd {width: 100%;}
 
 body.wind7 main {justify-content: center; align-content: center;}
 body.wind7 main section.a {align-self: center; min-width: 100%; max-width: 100%;}
@@ -495,6 +505,7 @@ body.wind7 main section.b {align-self: center; min-width: 100%; max-width: 100%;
 body.wind7 main section.c {align-self: center; min-width: 100%; max-width: 100%;}
 body.wind7 main section.d {align-self: center; min-width: 100%; max-width: 100%;}
 #w7l {width: 50%;}
+#w7d {width: 100%;}
 
 body.wind10 main {justify-content: center; align-content: center;}
 body.wind10 main section.a {align-self: center; min-width: 100%; max-width: 100%;}
@@ -502,6 +513,7 @@ body.wind10 main section.b {align-self: center; min-width: 100%; max-width: 100%
 body.wind10 main section.c {align-self: center; min-width: 100%; max-width: 100%;}
 body.wind10 main section.d {align-self: center; min-width: 100%; max-width: 100%;}
 #w10l {width: 50%;}
+#w10d {width: 100%;}
 
 footer {margin: 5rem 0 0 0;}
 }
